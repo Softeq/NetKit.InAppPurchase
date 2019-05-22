@@ -89,7 +89,7 @@ namespace Softeq.NetKit.InAppPurchase
                 case (int) IosPurchaseStateEnum.MissingData:
                     throw new MissingDataException(MissingDataExceptionMessage);
                 case (int) IosPurchaseStateEnum.AuthenticationFailed:
-                    throw new AuthenticationException(AuthenticationExceptionMessage);
+                    throw new NotAuthenticationException(AuthenticationExceptionMessage);
                 case (int) IosPurchaseStateEnum.InvalidSharedSecret:
                     throw new SharedSecretException(SharedSecretExceptionMessage);
                 case (int) IosPurchaseStateEnum.ServerUnavailable:
@@ -101,7 +101,7 @@ namespace Softeq.NetKit.InAppPurchase
                 case (int) IosPurchaseStateEnum.TestEnvironmentVerificationFailed:
                     throw new InvalidEnvironmentException(FailedTestEnvironmentVerificationExceptionMessage);
                 case (int) IosPurchaseStateEnum.AuthorizeFailed:
-                    throw new AuthorizeException(AuthorizeExceptionMessage);
+                    throw new NotAuthorizeException(AuthorizeExceptionMessage);
                 default:
                     throw new UnspecifiedPurchaseStatusException(BaseAppPurchaseExceptionMessage);
             }

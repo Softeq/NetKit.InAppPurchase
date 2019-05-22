@@ -12,7 +12,6 @@ namespace Softeq.NetKit.InAppPurchase.DTOs.Response
         [JsonProperty("environment")]
         public string Environment { get; set; }
         [JsonProperty("receipt")]
-        // App receipt fields.
         public AppReceiptResponse AppReceipt { get; set; }
     }
 }
