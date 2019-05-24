@@ -1,6 +1,7 @@
 // Developed by Softeq Development Corporation
 // http://www.softeq.com
 
+using System;
 using System.Threading.Tasks;
 using Softeq.NetKit.InAppPurchase;
 using Softeq.NetKit.InAppPurchase.DTOs.Request;
@@ -17,19 +18,16 @@ namespace Softeq.NoNetKit.InAppPurchase.Test
         [Fact]
         public async Task MissingDataExceptionTest()
         {
-            try
+            //Act
+            Func<Task> act = async () => await _iosPurchase.VerifyPaymentAsync(new IosPurchaseVerificationRequest
             {
-                await _iosPurchase.VerifyPaymentAsync(new IosPurchaseVerificationRequest()
-                {
-                    ProductId = "com.ResianInnovations.FriendBuks.iOS.1.friendbuk",
-                    TransactionId = "1000000378034117",
-                    Receipt = "Test"
-                });
-            }
-            catch (MissingDataException ex)
-            {
-                Assert.True(true, "Recieved MissingDataException");
-            }
+                ProductId = "com.ResianInnovations.FriendBuks.iOS.1.friendbuk",
+                TransactionId = "1000000378034117",
+                Receipt = "Test"
+            }); 
+
+            //Assert
+            await Assert.ThrowsAsync<MissingDataException>(act);
         }
     }
 }

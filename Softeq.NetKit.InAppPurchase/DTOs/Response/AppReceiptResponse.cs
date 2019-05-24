@@ -27,14 +27,14 @@ namespace Softeq.NetKit.InAppPurchase.DTOs.Response
         [JsonProperty("in_app")]
         public IEnumerable<InAppReceiptResponse> InAppReceiptResponses { get; set; }
 
-        //This fields are commented, because they are only present for auto-renewable subscription receipts. 
-        //[JsonProperty("web_order_line_item_id")]
-        //public string WebOrderLineId { get; set; }
-        //[JsonProperty("auto_renew_status")]
-        //public int SubscriptionAutoRenewStatus { get; set; }
-        //[JsonProperty("auto_renew_product_id")]
-        //public string SubscriptionAutoRenewPreference { get; set; }
-        //[JsonProperty("price_consent_status")]
-        //public int SubscriptionPriceConsentStatus { get; set; }
+        //This fields are only present for auto-renewable subscription receipts. 
+        [JsonProperty("web_order_line_item_id")]
+        public string WebOrderLineId { get; set; }
+        [JsonProperty("auto_renew_status")]
+        public int SubscriptionAutoRenewStatus { get; set; }
+        [JsonProperty("auto_renew_product_id")]
+        public string SubscriptionAutoRenewPreference { get; set; }
+        [JsonProperty("price_consent_status")]
+        public int SubscriptionPriceConsentStatus { get; set; }
     }
 }
