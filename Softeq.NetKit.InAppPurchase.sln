@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softeq.NetKit.InAppPurchase", "Softeq.NetKit.InAppPurchase\Softeq.NetKit.InAppPurchase.csproj", "{DD9342A8-2045-4343-9B18-7468BB0B808B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softeq.NoNetKit.InAppPurchase.Test", "Softeq.NetKit.InAppPurchase.Test\Softeq.NoNetKit.InAppPurchase.Test.csproj", "{FB1AA7F0-2BFF-4BFD-B0E9-8D98819E19EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD9342A8-2045-4343-9B18-7468BB0B808B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9342A8-2045-4343-9B18-7468BB0B808B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9342A8-2045-4343-9B18-7468BB0B808B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9342A8-2045-4343-9B18-7468BB0B808B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB1AA7F0-2BFF-4BFD-B0E9-8D98819E19EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1AA7F0-2BFF-4BFD-B0E9-8D98819E19EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1AA7F0-2BFF-4BFD-B0E9-8D98819E19EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1AA7F0-2BFF-4BFD-B0E9-8D98819E19EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB3500D7-DE72-415E-9DE3-C06802BA725C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.AndroidPublisher.v2" Version="1.32.2.1173" />
+    <PackageReference Include="Google.Apis.Core" Version="1.32.2" />
+  </ItemGroup>
+
+</Project>
